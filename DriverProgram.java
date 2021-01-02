@@ -25,8 +25,13 @@ public class DriverProgram extends CreateJson {
 				 
 				}
 			else
-				path="example.json";
-		*/	
+				path="example.json";*/
+			
+				 File fpp=new File("example.json");
+        FileWriter frr=new FileWriter(fpp);
+       frr.write("");
+       frr.close();
+	
 		}
 	
 		startflag++;
