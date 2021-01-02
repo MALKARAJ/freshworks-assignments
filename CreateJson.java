@@ -159,6 +159,11 @@ line=line.replaceAll("\""+key+"\""+":\\"+valueFromFile.substring(0,valueFromFile
 
 	public static void  create(String key,Object value,int valueType)  throws IOException {
 		
+		 File fpp=new File("example.json");
+        FileWriter frr=new FileWriter(fpp);
+       frr.write("");
+       frr.close();
+      
 		
 	  BufferedReader br=new BufferedReader(new FileReader("example.json"));
 		      //System.out.println("create"+path);   
